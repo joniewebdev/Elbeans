@@ -1,0 +1,510 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, html {
+    height: 100%;
+}
+
+.firstpage {
+    background-image: url("images/firstpage_bg2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.firstpage .top {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.firstpage .top img {
+    height: 30px;
+    margin: 10px 0px;
+    margin-right: 20px;
+}
+
+.top .contacts_about {
+    flex: 1;
+    margin: auto;
+    text-align: left;
+}
+
+.top .contacts_about a {
+    text-decoration: none;
+    color: #9A8268;
+    margin-left: 20px;
+}
+
+.top .contacts_about a:hover {
+    color: #FD8D20;
+}
+
+.top .contacts_logo {
+    flex: 1;
+    margin: auto;
+    text-align: end;
+}
+
+.firstpage .brand {
+    margin: auto;
+}
+
+.firstpage .brand .brand_name {
+    font-size: 70px;
+    color: #D9C7B1;
+}
+
+.firstpage .brand .tagline {
+    font-size: 35px;
+    color: #9A8268;
+    font-family: GreatVibes;
+}
+
+.firstpage .brand .view_menu {
+    margin-top: 30px;
+}
+
+.firstpage .brand .view_menu a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #D9C7B1;
+}
+
+.firstpage .brand .view_menu a:hover {
+    color: #FD8D20;
+}
+
+.firstpage .brand .arrow {
+    margin: 5px auto;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #9A8268;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+.firstpage_content {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+
+.firstpage_content img {
+    height: 300px;
+}
+
+.firstpage_content .address {
+    margin: 0px 25px;
+    color: #D9C7B1;
+    font-size: 20px;
+}
+
+.firstpage_content .address a {
+    text-decoration: none;
+    color: #9A8268;
+}
+
+.firstpage_content .address a:hover {
+    color: #FD8D20;
+}
+
+.menu {
+    padding: 20px 0px;
+    background-color: #150102;
+}
+/**/
+.menu_header {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.menu_title {
+    font-family: GreatVibes;
+    font-size: 90px;
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #150102;
+    text-shadow: -1px -1px 0 #D9C7B1, 1px -1px 0 #D9C7B1, -1px 1px 0 #D9C7B1, 1px 1px 0 #D9C7B1;
+    
+}
+
+.menu_text, .menu_text3 {
+    color: #150102;
+    font-size: 20px;
+    text-align: left;
+    width: 99%;
+    position: absolute;
+    bottom: 10px;
+    left: 1%;
+}
+
+.menu_text3 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu_subtext {
+    flex: 1;
+}
+
+.menuSlides img {
+    width: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+/**/
+
+.menu_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu_footnote {
+    color: #D9C7B1;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.menu_footnote a {
+    text-decoration: none;
+    color: #9A8268;
+}
+
+.menu_footnote a:hover {
+    color: #FD8D20;
+}
+
+.hot_coffee, .iced_coffee, .non_coffee, .frappe_and_shake, .bites {
+    margin: 20px 10px;
+    width: 350px;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: #D9C7B1;
+}
+
+.div2 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #D9C7B1;
+    color: #150102;
+}
+
+.item_type {
+    font-size: 25px;
+    color: #9A8268;
+}
+
+.item_size {
+    font-size: 22px;
+}
+
+.item_name, .item_price {
+    font-size: 20px;
+}
+
+.item_type, .item_name {
+    flex: 2;
+    text-align: left;
+}
+
+.non_coffee .item_type, .non_coffee .item_name {
+    flex: 3;
+}
+
+.item_size, .item_price {
+    flex: 1;
+    text-align: center;
+}
+
+.coffeebeans_price {
+    display: flex;
+    margin: 10px 10px;
+}
+
+.right {
+    flex: 1;
+    background: #D9C7B1;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.top_pricetext {
+    display: flex;
+    align-items: center;
+}
+
+.price_logo {
+    text-align: end;
+    margin-top: 20px;
+    padding: 0px 20px;
+    border-right: 2px solid #150102;
+}
+
+.pricelist {
+    font-size: 40px;
+    margin-top:20px;
+    padding-left: 20px;
+    font-family: GreatVibes;
+    color: #150102;
+}
+
+.packages {
+    display: flex;
+    padding: 20px;
+}
+
+.packages .retail {
+    flex: 1;
+    background: #9A8268;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.packages .wholesale {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.packages h1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.packages h2 {
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.packages h4 {
+    margin-top: 10px;
+}
+
+.packages p {
+    font-size: 13px;
+}
+
+.retail .hr {
+    width: 90%;
+    height: 1px;
+    margin: 15px auto;
+    margin-bottom: 35px;
+    background-color: white;
+}
+
+.retail p {
+    color: #D9C7B1;
+}
+
+.wholesale .hr {
+    width: 90%;
+    height: 1px;
+    margin: 10px auto;
+    margin-bottom: 35px;
+    background-color: black;
+}
+
+.specialty {
+    border: 3px solid #FD8D20;
+    border-radius: 10px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.specialty p {
+    color: #9A8268;
+}
+
+.specialty .hr {
+    width: 90%;
+    height: 1px;
+    margin: 10px auto;
+    margin-bottom: 35px;
+    background-color: #FD8D20;
+}
+
+.left {
+    flex:1;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.left .we_also {
+    margin: 50px 20px;
+    font-size: 60px;
+    font-family: GreatVibes;
+    color: #150102;
+}
+
+.left img {
+    width: 100%;
+}
+
+.contacts_and_about{
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.contacts {
+    flex: 2;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #9A8268;
+}
+
+.contacts a:hover, .contacts a:active {
+    color: #FD8D20;
+}
+
+.contacts_text {
+    font-size: 20px;
+}
+
+.about {
+    flex: 3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about p {
+    margin: 0px 75px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: GreatVibes;
+    color: #150102;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.fblogo, .iglogo {
+    margin: 0px 5px;
+}
+
+.footer img {
+    height: 22px;
+    margin-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #150102;
+}
+
+.webdev {
+    color: #150102;
+    text-align: end;
+    font-size: 9px;
+    padding: 3px 5px;
+}
+
+@keyframes fade{
+    from{opacity:0.5;}
+    to{opacity: 1;}
+}
+
+@font-face {
+    font-family: GreatVibes;
+    src: url(fonts/GreatVibes-Regular.ttf);
+}
+
+@media (max-width: 700px) {
+    .top .contacts_about a:active {
+        color: #FD8D20;
+    }
+
+    .firstpage {
+        background-image: url("images/firstpage_bg_mobile.jpg");
+    }
+
+    .firstpage_content {
+        top: 45%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .firstpage_content img {
+        height: 200px;
+    }
+
+    .firstpage .brand .view_menu a:active {
+        color: #9A8268;
+    }
+    
+
+    .menu_title {
+        font-size: 60px;
+        top: 10px;
+    }
+
+    .menu_text3 {
+        font-size: 12px;
+    } 
+
+    .menu_footnote {
+        font-size: 20px;
+    }
+
+    .coffeebeans_price, .packages, .contacts_and_about {
+        display: block;
+    }
+
+    .left img {
+        position: relative;
+        width: 100%;
+    }
+
+    .left .we_also {
+        font-size: 45px;
+        margin: 30px 10px;
+    }
+
+    .about p {
+        margin: 0 10px;
+    }
+
+    .contacts .title {
+        text-align: center;
+    }
+}
